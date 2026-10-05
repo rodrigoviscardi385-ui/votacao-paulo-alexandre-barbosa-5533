@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Relatório Executivo Oficial - Deputado Paulo Alexandre Barbosa 5533</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 14mm 12mm 14mm 12mm;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans'. sans-serif;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+
+        body {
+            background: #ffffff;
+            color: #0f172a;
+            font-size: 11px;
+            line-height: 1.4;
+        }
+
+        .page-break {
+            page-break-before: always;
+            padding-top: 10px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 12px;
+            margin-bottom: 18px;
+        }
+
+        .header-title h1 {
+            font-family: 'Space Grotesk'. sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #0f172a;
+            letter-spacing: -0.02em;
+        }
+
+        .header-title .subtitle {
+            font-size: 11px;
+            font-weight: 600;
+            color: #2563eb;
+            margin-top: 3px;
+        }
+
+        .header-meta {
+            text-align: right;
+            font-size: 9px;
+            color: #64748b;
+        }
+
+        /* KPI Cards */
+        .kpi-row {
+            display: grid;
+            grid-template-columns: repeat(4. 1fr);
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .kpi-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .kpi-card.teal { border-left-color: #0d9488; }
+        .kpi-card.purple { border-left-color: #7c3aed; }
+        .kpi-card.amber { border-left-color: #d97706; }
+
+        .kpi-label {
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #64748b;
+            letter-spacing: 0.04em;
+        }
+
+        .kpi-value {
+            font-family: 'Space Grotesk'. sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 4px 0 2px;
+        }
+
+        .kpi-subtext {
+            font-size: 9px;
+            color: #64748b;
+        }
+
+        /* Section Title */
+        .section-header {
+            font-family: 'Space Grotesk'. sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: #1e293b;
+            border-left: 3px solid #2563eb;
+            padding-left: 8px;
+            margin: 16px 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        /* Charts */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 14px;
+            margin-bottom: 18px;
+        }
+
+        .chart-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 12px;
+        }
+
+        .chart-box-title {
+            font-size: 11px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 190px;
+            width: 100%;
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9.5px;
+            margin-bottom: 14px;
+        }
+
+        th {
+            background: #f1f5f9;
+            color: #334155;
+            font-weight: 700;
+            text-align: left;
+            padding: 6px 8px;
+            border-top: 1px solid #cbd5e1;
+            border-bottom: 1px solid #cbd5e1;
+            text-transform: uppercase;
+            font-size: 8px;
+            letter-spacing: 0.03em;
+        }
+
+        td {
+            padding: 5px 8px;
+            border-bottom: 1px solid #e2e8f0;
+            color: #1e293b;
+        }
+
+        tr:nth-child(even) td {
+            background: #fafafa;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 8px;
+            font-weight: 600;
+        }
+
+        .tag-bs { background: #e0f2fe; color: #0284c7; }
+        .tag-rmsp { background: #dbeafe; color: #1d4ed8; }
+        .tag-sjc { background: #ede9fe; color: #6d28d9; }
+        .tag-rmc { background: #d1fae5; color: #047857; }
+        .tag-int { background: #f1f5f9; color: #475569; }
+
+        .table-grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            padding-top: 8px;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 8px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ==================== PÁGINA 1: VISÃO GERAL. KPIS E GRÁFICOS ==================== -->
+    <div class="header">
+        <div class="header-title">
+            <h1>Relatório Executivo Oficial de Votação</h1>
+            <div class="subtitle">DEPUTADO FEDERAL PAULO ALEXANDRE BARBOSA • Nº 5533 (PSD) • SÃO PAULO</div>
+        </div>
+        <div class="header-meta">
+            Fonte: Tribunal Superior Eleitoral (TSE)<br>
+            Apuração Oficial Consolidada
+        </div>
+    </div>
+
+    <!-- KPIs -->
+    <div class="kpi-row">
+        <div class="kpi-card">
+            <div class="kpi-label">Votação Total em SP</div>
+            <div class="kpi-value">167.423</div>
+            <div class="kpi-subtext">~0.71% dos votos válidos do Estado</div>
+        </div>
+        <div class="kpi-card teal">
+            <div class="kpi-label">Baixada Santista</div>
+            <div class="kpi-value">120.317</div>
+            <div class="kpi-subtext"><strong>71.9%</strong> do total do deputado</div>
+        </div>
+        <div class="kpi-card purple">
+            <div class="kpi-label">4 Regiões Metropolitanas</div>
+            <div class="kpi-value">143.551</div>
+            <div class="kpi-subtext"><strong>85.7%</strong> de todo o eleitorado</div>
+        </div>
+        <div class="kpi-card amber">
+            <div class="kpi-label">Santos (Berço Político)</div>
+            <div class="kpi-value">48.781</div>
+            <div class="kpi-subtext"><strong>19.82%</strong> de todos os votos da cidade</div>
+        </div>
+    </div>
+
+    <!-- Gráficos -->
+    <div class="charts-grid">
+        <div class="chart-box">
+            <div class="chart-box-title">Distribuição por Regiões Metropolitanas</div>
+            <div class="chart-wrapper">
+                <canvas id="pdfDonutChart"></canvas>
+            </div>
+        </div>
+        <div class="chart-box">
+            <div class="chart-box-title">Top 8 Cidades com Maior Votação no Estado</div>
+            <div class="chart-wrapper">
+                <canvas id="pdfBarTopChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tabela Resumo das 4 Regiões -->
+    <div class="section-header">1. Consolidado das 4 Regiões Metropolitanas</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Região Metropolitana</th>
+                <th style="text-align: center;">Cidades</th>
+                <th style="text-align: right;">Votos do Candidato</th>
+                <th style="text-align: right;">% do Total do Candidato</th>
+                <th style="text-align: right;">% Válidos na Região</th>
+                <th>Município Polo com Maior Votação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>RM da Baixada Santista (RMBS)</strong></td>
+                <td style="text-align: center;">9</td>
+                <td style="text-align: right; font-weight: 700;">120.317</td>
+                <td style="text-align: right; font-weight: 700;">71.86%</td>
+                <td style="text-align: right;">12.27%</td>
+                <td>Santos (48.781 votos - 19.82%)</td>
+            </tr>
+            <tr>
+                <td><strong>RM de São Paulo (Grande SP)</strong></td>
+                <td style="text-align: center;">39</td>
+                <td style="text-align: right; font-weight: 700;">11.046</td>
+                <td style="text-align: right; font-weight: 700;">6.60%</td>
+                <td style="text-align: right;">0.10%</td>
+                <td>São Paulo (4.888 votos - 0.08%)</td>
+            </tr>
+            <tr>
+                <td><strong>RM Vale do Paraíba / Litoral Norte (SJC)</strong></td>
+                <td style="text-align: center;">39</td>
+                <td style="text-align: right; font-weight: 700;">10.136</td>
+                <td style="text-align: right; font-weight: 700;">6.05%</td>
+                <td style="text-align: right;">0.73%</td>
+                <td>Caraguatatuba (1.565 votos - 2.10%)</td>
+            </tr>
+            <tr>
+                <td><strong>RM de Campinas (RMC)</strong></td>
+                <td style="text-align: center;">20</td>
+                <td style="text-align: right; font-weight: 700;">2.052</td>
+                <td style="text-align: right; font-weight: 700;">1.23%</td>
+                <td style="text-align: right;">0.12%</td>
+                <td>Americana (712 votos - 0.55%)</td>
+            </tr>
+            <tr style="background: #f1f5f9; font-weight: 700;">
+                <td>TOTAL CONSOLIDADO (4 RMs)</td>
+                <td style="text-align: center;">107</td>
+                <td style="text-align: right;">143.551</td>
+                <td style="text-align: right;">85.74%</td>
+                <td style="text-align: right;">—</td>
+                <td>Principal concentração territorial do candidato</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <span>Relatório de Apuração Eleitoral • Dep. Paulo Alexandre Barbosa 5533</span>
+        <span>Página 1 de 2</span>
+    </div>
+
+    <!-- ==================== PÁGINA 2: DETALHAMENTO DAS REGIÕES ==================== -->
+    <div class="page-break"></div>
+
+    <div class="header">
+        <div class="header-title">
+            <h1>Detalhamento Territorial por Regiões Metropolitanas</h1>
+            <div class="subtitle">DEPUTADO FEDERAL PAULO ALEXANDRE BARBOSA (5533)</div>
+        </div>
+        <div class="header-meta">
+            Página 2 de 2<br>
+            TSE • Divulgação Oficial
+        </div>
+    </div>
+
+    <div class="table-grid-2">
+        <!-- Coluna 1: Baixada Santista Completa -->
+        <div>
+            <div class="section-header">2. Baixada Santista (Todas as 9 Cidades)</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pos.</th>
+                        <th>Município</th>
+                        <th style="text-align: right;">Votos</th>
+                        <th style="text-align: right;">% Válidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>#1</strong></td>
+                        <td>Santos</td>
+                        <td style="text-align: right; font-weight: 700;">48.781</td>
+                        <td style="text-align: right;">19.82%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>#2</strong></td>
+                        <td>São Vicente</td>
+                        <td style="text-align: right; font-weight: 700;">19.543</td>
+                        <td style="text-align: right;">11.50%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>#3</strong></td>
+                        <td>Guarujá</td>
+                        <td style="text-align: right; font-weight: 700;">16.842</td>
+                        <td style="text-align: right;">10.26%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>#4</strong></td>
+                        <td>Cubatão</td>
+                        <td style="text-align: right; font-weight: 700;">10.794</td>
+                        <td style="text-align: right;">16.62%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>#5</strong></td>
+                        <td>Praia Grande</td>
+                        <td style="text-align: right; font-weight: 700;">8.748</td>
+                        <td style="text-align: right;">5.06%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>#6</strong></td>
+                        <td>Bertioga</td>
+                        <td style="text-align: right; font-weight: 700;">5.555</td>
+                        <td style="text-align: right;">15.51%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>#7</strong></td>
+                        <td>Peruíbe</td>
+                        <td style="text-align: right; font-weight: 700;">4.038</td>
+                        <td style="text-align: right;">10.13%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>#8</strong></td>
+                        <td>Itanhaém</td>
+                        <td style="text-align: right; font-weight: 700;">3.612</td>
+                        <td style="text-align: right;">6.52%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>#9</strong></td>
+                        <td>Mongaguá</td>
+                        <td style="text-align: right; font-weight: 700;">2.404</td>
+                        <td style="text-align: right;">7.59%</td>
+                    </tr>
+                    <tr style="background: #e0f2fe; font-weight: 700;">
+                        <td colspan="2">TOTAL BAIXADA SANTISTA</td>
+                        <td style="text-align: right;">120.317</td>
+                        <td style="text-align: right;">12.27%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="section-header">3. Vale do Paraíba e Litoral Norte (Principais)</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pos.</th>
+                        <th>Município</th>
+                        <th style="text-align: right;">Votos</th>
+                        <th style="text-align: right;">% Válidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>#1</td>
+                        <td>Caraguatatuba</td>
+                        <td style="text-align: right; font-weight: 600;">1.565</td>
+                        <td style="text-align: right;">2.10%</td>
+                    </tr>
+                    <tr>
+                        <td>#2</td>
+                        <td>Cruzeiro</td>
+                        <td style="text-align: right; font-weight: 600;">1.079</td>
+                        <td style="text-align: right;">2.79%</td>
+                    </tr>
+                    <tr>
+                        <td>#3</td>
+                        <td>Guaratinguetá</td>
+                        <td style="text-align: right; font-weight: 600;">949</td>
+                        <td style="text-align: right;">1.44%</td>
+                    </tr>
+                    <tr>
+                        <td>#4</td>
+                        <td>Aparecida</td>
+                        <td style="text-align: right; font-weight: 600;">886</td>
+                        <td style="text-align: right;">4.36%</td>
+                    </tr>
+                    <tr>
+                        <td>#5</td>
+                        <td>São Bento Do Sapucaí</td>
+                        <td style="text-align: right; font-weight: 600;">863</td>
+                        <td style="text-align: right;">13.23%</td>
+                    </tr>
+                    <tr>
+                        <td>#6</td>
+                        <td>Taubaté</td>
+                        <td style="text-align: right; font-weight: 600;">738</td>
+                        <td style="text-align: right;">0.44%</td>
+                    </tr>
+                    <tr>
+                        <td>#7</td>
+                        <td>São Sebastião</td>
+                        <td style="text-align: right; font-weight: 600;">635</td>
+                        <td style="text-align: right;">1.30%</td>
+                    </tr>
+                    <tr>
+                        <td>#8</td>
+                        <td>Campos Do Jordão</td>
+                        <td style="text-align: right; font-weight: 600;">509</td>
+                        <td style="text-align: right;">2.00%</td>
+                    </tr>
+                    <tr>
+                        <td>#9</td>
+                        <td>Ubatuba</td>
+                        <td style="text-align: right; font-weight: 600;">255</td>
+                        <td style="text-align: right;">0.47%</td>
+                    </tr>
+                    <tr>
+                        <td>#10</td>
+                        <td>Lorena</td>
+                        <td style="text-align: right; font-weight: 600;">245</td>
+                        <td style="text-align: right;">0.54%</td>
+                    </tr>
+                    <tr>
+                        <td>#11</td>
+                        <td>Potim</td>
+                        <td style="text-align: right; font-weight: 600;">215</td>
+                        <td style="text-align: right;">2.27%</td>
+                    </tr>
+                    <tr>
+                        <td>#12</td>
+                        <td>Canas</td>
+                        <td style="text-align: right; font-weight: 600;">215</td>
+                        <td style="text-align: right;">7.26%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Coluna 2: Grande SP e Campinas -->
+        <div>
+            <div class="section-header">4. Grande São Paulo (Principais Cidades)</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pos.</th>
+                        <th>Município</th>
+                        <th style="text-align: right;">Votos</th>
+                        <th style="text-align: right;">% Válidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>#1</td>
+                        <td>São Paulo</td>
+                        <td style="text-align: right; font-weight: 600;">4.888</td>
+                        <td style="text-align: right;">0.08%</td>
+                    </tr>
+                    <tr>
+                        <td>#2</td>
+                        <td>Mairiporã</td>
+                        <td style="text-align: right; font-weight: 600;">1.676</td>
+                        <td style="text-align: right;">3.65%</td>
+                    </tr>
+                    <tr>
+                        <td>#3</td>
+                        <td>Ribeirão Pires</td>
+                        <td style="text-align: right; font-weight: 600;">951</td>
+                        <td style="text-align: right;">1.55%</td>
+                    </tr>
+                    <tr>
+                        <td>#4</td>
+                        <td>Mauá</td>
+                        <td style="text-align: right; font-weight: 600;">830</td>
+                        <td style="text-align: right;">0.39%</td>
+                    </tr>
+                    <tr>
+                        <td>#5</td>
+                        <td>Osasco</td>
+                        <td style="text-align: right; font-weight: 600;">508</td>
+                        <td style="text-align: right;">0.13%</td>
+                    </tr>
+                    <tr>
+                        <td>#6</td>
+                        <td>Guarulhos</td>
+                        <td style="text-align: right; font-weight: 600;">337</td>
+                        <td style="text-align: right;">0.05%</td>
+                    </tr>
+                    <tr>
+                        <td>#7</td>
+                        <td>Mogi Das Cruzes</td>
+                        <td style="text-align: right; font-weight: 600;">268</td>
+                        <td style="text-align: right;">0.12%</td>
+                    </tr>
+                    <tr>
+                        <td>#8</td>
+                        <td>Francisco Morato</td>
+                        <td style="text-align: right; font-weight: 600;">234</td>
+                        <td style="text-align: right;">0.28%</td>
+                    </tr>
+                    <tr>
+                        <td>#9</td>
+                        <td>Taboão Da Serra</td>
+                        <td style="text-align: right; font-weight: 600;">196</td>
+                        <td style="text-align: right;">0.13%</td>
+                    </tr>
+                    <tr>
+                        <td>#10</td>
+                        <td>Arujá</td>
+                        <td style="text-align: right; font-weight: 600;">142</td>
+                        <td style="text-align: right;">0.28%</td>
+                    </tr>
+                    <tr>
+                        <td>#11</td>
+                        <td>Santo André</td>
+                        <td style="text-align: right; font-weight: 600;">99</td>
+                        <td style="text-align: right;">0.02%</td>
+                    </tr>
+                    <tr>
+                        <td>#12</td>
+                        <td>São Bernardo Do Campo</td>
+                        <td style="text-align: right; font-weight: 600;">93</td>
+                        <td style="text-align: right;">0.02%</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="section-header">5. Região Metropolitana de Campinas</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pos.</th>
+                        <th>Município</th>
+                        <th style="text-align: right;">Votos</th>
+                        <th style="text-align: right;">% Válidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>#1</td>
+                        <td>Americana</td>
+                        <td style="text-align: right; font-weight: 600;">712</td>
+                        <td style="text-align: right;">0.55%</td>
+                    </tr>
+                    <tr>
+                        <td>#2</td>
+                        <td>Paulínia</td>
+                        <td style="text-align: right; font-weight: 600;">275</td>
+                        <td style="text-align: right;">0.41%</td>
+                    </tr>
+                    <tr>
+                        <td>#3</td>
+                        <td>Campinas</td>
+                        <td style="text-align: right; font-weight: 600;">268</td>
+                        <td style="text-align: right;">0.04%</td>
+                    </tr>
+                    <tr>
+                        <td>#4</td>
+                        <td>Nova Odessa</td>
+                        <td style="text-align: right; font-weight: 600;">159</td>
+                        <td style="text-align: right;">0.46%</td>
+                    </tr>
+                    <tr>
+                        <td>#5</td>
+                        <td>Holambra</td>
+                        <td style="text-align: right; font-weight: 600;">145</td>
+                        <td style="text-align: right;">1.55%</td>
+                    </tr>
+                    <tr>
+                        <td>#6</td>
+                        <td>Santa Bárbara D'Oeste</td>
+                        <td style="text-align: right; font-weight: 600;">136</td>
+                        <td style="text-align: right;">0.13%</td>
+                    </tr>
+                    <tr>
+                        <td>#7</td>
+                        <td>Santo Antônio De Posse</td>
+                        <td style="text-align: right; font-weight: 600;">82</td>
+                        <td style="text-align: right;">0.70%</td>
+                    </tr>
+                    <tr>
+                        <td>#8</td>
+                        <td>Valinhos</td>
+                        <td style="text-align: right; font-weight: 600;">68</td>
+                        <td style="text-align: right;">0.10%</td>
+                    </tr>
+                    <tr>
+                        <td>#9</td>
+                        <td>Sumaré</td>
+                        <td style="text-align: right; font-weight: 600;">55</td>
+                        <td style="text-align: right;">0.04%</td>
+                    </tr>
+                    <tr>
+                        <td>#10</td>
+                        <td>Hortolândia</td>
+                        <td style="text-align: right; font-weight: 600;">33</td>
+                        <td style="text-align: right;">0.03%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span>Relatório de Apuração Eleitoral • Dep. Paulo Alexandre Barbosa 5533</span>
+        <span>Página 2 de 2</span>
+    </div>
+
+<script>
+    // Donut Chart para PDF (sem animação para captura direta)
+    const ctxPie = document.getElementById('pdfDonutChart').getContext('2d');
+    new Chart(ctxPie. {
+        type: 'doughnut'.
+        data: {
+            labels: ['Baixada Santista'. 'Grande SP'. 'Vale / SJC'. 'Campinas'. 'Interior'].
+            datasets: [{
+                data: [120317. 11046. 10136. 2052. 23872].
+                backgroundColor: ['#0284c7'. '#2563eb'. '#7c3aed'. '#059669'. '#94a3b8'].
+                borderWidth: 2.
+                borderColor: '#ffffff'
+            }]
+        }.
+        options: {
+            animation: false.
+            responsive: true.
+            maintainAspectRatio: false.
+            plugins: {
+                legend: {
+                    position: 'bottom'.
+                    labels: { boxWidth: 10. font: { size: 9. family: 'Plus Jakarta Sans' }. padding: 8 }
+                }
+            }.
+            cutout: '62%'
+        }
+    });
+
+    // Horizontal Bar Chart para PDF (sem animação)
+    const ctxBar = document.getElementById('pdfBarTopChart').getContext('2d');
+    new Chart(ctxBar. {
+        type: 'bar'.
+        data: {
+            labels: ["Santos". "São Vicente". "Guarujá". "Cubatão". "Praia Grande". "Bertioga". "São Paulo". "Peruíbe"].
+            datasets: [{
+                data: [48781. 19543. 16842. 10794. 8748. 5555. 4888. 4038].
+                backgroundColor: '#2563eb'.
+                borderRadius: 4
+            }]
+        }.
+        options: {
+            animation: false.
+            indexAxis: 'y'.
+            responsive: true.
+            maintainAspectRatio: false.
+            plugins: { legend: { display: false } }.
+            scales: {
+                x: {
+                    grid: { color: '#f1f5f9' }.
+                    ticks: { font: { size: 8 } }
+                }.
+                y: {
+                    grid: { display: false }.
+                    ticks: { font: { size: 8.5. weight: '600' } }
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
