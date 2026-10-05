@@ -1,0 +1,108 @@
+﻿regiao_metropolitana,posicao_regiao,municipio,votos,percentual_validos_municipio,votos_validos_cidade,urnas_apuradas_pct,comparecimento,total_eleitores,codigo_tse,codigo_ibge
+Região Metropolitana da Baixada Santista,1,Santos,48781,"19,82",246048,"100,00",263310,348145,70718,3548500
+Região Metropolitana da Baixada Santista,2,São Vicente,19543,"11,50",169941,"99,87",188625,255910,71218,3551009
+Região Metropolitana da Baixada Santista,3,Guarujá,16842,"10,26",164024,"100,00",183195,238637,64750,3518701
+Região Metropolitana da Baixada Santista,4,Cubatão,10794,"16,62",64916,"98,68",71290,90309,63711,3513504
+Região Metropolitana da Baixada Santista,5,Praia Grande,8748,"5,06",172655,"98,82",190807,264937,69213,3541000
+Região Metropolitana da Baixada Santista,6,Bertioga,5555,"15,51",35794,"100,00",38879,52927,61280,3506359
+Região Metropolitana da Baixada Santista,7,Peruíbe,4038,"10,13",39829,"100,00",43173,59839,68535,3537602
+Região Metropolitana da Baixada Santista,8,Itanhaém,3612,"6,52",55386,"100,00",61235,85044,65439,3522109
+Região Metropolitana da Baixada Santista,9,Mongaguá,2404,"7,59",31654,"100,00",34990,50491,67237,3531100
+Região Metropolitana de São Paulo,1,São Paulo,4888,"0,08",6239952,"100,00",6988929,9126158,71072,3550308
+Região Metropolitana de São Paulo,2,Mairiporã,1676,"3,65",45933,"100,00",51202,65733,66710,3528502
+Região Metropolitana de São Paulo,3,Ribeirão Pires,951,"1,55",61218,"100,00",68809,85765,69671,3543303
+Região Metropolitana de São Paulo,4,Mauá,830,"0,39",210320,"100,00",239768,310158,66893,3529401
+Região Metropolitana de São Paulo,5,Osasco,508,"0,13",400587,"100,00",447253,583224,67890,3534401
+Região Metropolitana de São Paulo,6,Guarulhos,337,"0,05",677418,"100,00",765222,947757,64777,3518800
+Região Metropolitana de São Paulo,7,Mogi Das Cruzes,268,"0,12",227049,"100,00",256301,333775,67130,3530607
+Região Metropolitana de São Paulo,8,Francisco Morato,234,"0,28",82791,"100,00",95301,126743,64270,3516309
+Região Metropolitana de São Paulo,9,Taboão Da Serra,196,"0,13",150320,"100,00",170359,211829,71579,3552809
+Região Metropolitana de São Paulo,10,Arujá,142,"0,28",50913,"100,00",57081,71346,61778,3503901
+Região Metropolitana de São Paulo,11,Santo André,99,"0,02",400193,"100,00",439113,572921,70572,3547809
+Região Metropolitana de São Paulo,12,São Bernardo Do Campo,93,"0,02",436699,"100,00",489559,626008,70750,3548708
+Região Metropolitana de São Paulo,13,Caieiras,90,"0,18",49271,"100,00",55767,72229,62812,3509007
+Região Metropolitana de São Paulo,14,Franco Da Rocha,88,"0,13",68192,"97,95",78150,107776,64297,3516408
+Região Metropolitana de São Paulo,15,Suzano,59,"0,04",159017,"100,00",181744,235438,71510,3552502
+Região Metropolitana de São Paulo,16,São Caetano Do Sul,58,"0,05",113863,"100,00",122222,147533,70777,3548807
+Região Metropolitana de São Paulo,17,Carapicuíba,53,"0,03",193410,"100,00",217268,290282,63134,3510609
+Região Metropolitana de São Paulo,18,Cotia,51,"0,04",134030,"100,00",149926,193978,63614,3513009
+Região Metropolitana de São Paulo,19,Itaquaquecetuba,51,"0,03",169926,"100,00",195916,257861,65633,3523107
+Região Metropolitana de São Paulo,20,Diadema,48,"0,02",224518,"100,00",255932,330772,63770,3513801
+Região Metropolitana de São Paulo,21,Embu-Guaçu,43,"0,13",33765,"100,00",40134,53715,64033,3515103
+Região Metropolitana de São Paulo,22,Rio Grande Da Serra,38,"0,16",23241,"100,00",26874,33722,69833,3544103
+Região Metropolitana de São Paulo,23,Barueri,37,"0,02",209577,"100,00",230312,297336,62138,3505708
+Região Metropolitana de São Paulo,24,Embu Das Artes,34,"0,02",142903,"100,00",161250,206229,64017,3515004
+Região Metropolitana de São Paulo,25,Poá,32,"0,05",65247,"100,00",72857,89811,68977,3539806
+Região Metropolitana de São Paulo,26,Itapecerica Da Serra,23,"0,03",85945,"100,00",97052,124019,65455,3522208
+Região Metropolitana de São Paulo,27,Itapevi,22,"0,02",118237,"100,00",127329,168468,65510,3522505
+Região Metropolitana de São Paulo,28,Santana De Parnaíba,22,"0,03",77771,"97,38",83905,111456,70475,3547304
+Região Metropolitana de São Paulo,29,Santa Isabel,21,"0,07",29840,"100,00",33291,41695,70378,3546801
+Região Metropolitana de São Paulo,30,Cajamar,12,"0,03",47508,"96,24",53533,70020,62855,3509205
+Região Metropolitana de São Paulo,31,Ferraz De Vasconcelos,11,"0,01",91656,"100,00",103597,128862,64157,3515707
+Região Metropolitana de São Paulo,32,Jandira,10,"0,02",53774,"100,00",59943,76022,66010,3525003
+Região Metropolitana de São Paulo,33,Juquitiba,7,"0,04",16261,"100,00",17904,22815,66257,3526209
+Região Metropolitana de São Paulo,34,Salesópolis,5,"0,05",10862,"100,00",11914,14725,70017,3545001
+Região Metropolitana de São Paulo,35,Pirapora Do Bom Jesus,4,"0,04",9788,"100,00",10664,14158,68837,3539103
+Região Metropolitana de São Paulo,36,Vargem Grande Paulista,4,"0,02",19817,"67,97",22071,42997,72737,3556453
+Região Metropolitana de São Paulo,37,Guararema,1,"0,01",15672,"81,01",16791,26373,64670,3518305
+Região Metropolitana de São Paulo,38,Biritiba Mirim,0,"0,00",16488,"100,00",18392,24212,62316,3506607
+Região Metropolitana de São Paulo,39,São Lourenço Da Serra,0,"0,00",6546,"80,00",7248,11946,61905,3549953
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),1,Caraguatatuba,1565,"2,10",74448,"100,00",82077,106195,63118,3510500
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),2,Cruzeiro,1079,"2,79",38615,"97,70",43311,56185,63690,3513405
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),3,Guaratinguetá,949,"1,44",65950,"100,00",72519,90804,64696,3518404
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),4,Aparecida,886,"4,36",20083,"100,00",22028,26836,61492,3502507
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),5,São Bento Do Sapucaí,863,"13,23",6521,"100,00",7235,9073,70734,3548609
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),6,Taubaté,738,"0,44",166687,"100,00",184105,239596,71838,3554102
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),7,São Sebastião,635,"1,30",48888,"100,00",52698,68034,71153,3550704
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),8,Campos Do Jordão,509,"2,00",25446,"100,00",29252,38106,62952,3509700
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),9,Ubatuba,255,"0,47",54043,"100,00",58668,77899,72095,3555406
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),10,Lorena,245,"0,54",45087,"100,00",49285,61172,66451,3527207
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),11,Canas,215,"7,26",2961,"100,00",3217,3959,62103,3509957
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),12,Potim,215,"2,27",9421,"100,00",10270,12546,61565,3540754
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),13,Cachoeira Paulista,211,"1,23",17073,"100,00",18723,23891,62731,3508603
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),14,Jacareí,187,"0,15",124205,"99,82",136580,171237,65897,3524402
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),15,Ilhabela,179,"0,86",20893,"97,09",22831,31085,65099,3520400
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),16,Santo Antônio Do Pinhal,165,"3,70",4462,"100,00",4986,6113,70653,3548203
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),17,São José Dos Campos,117,"0,03",404777,"100,00",437624,538797,70998,3549904
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),18,Piquete,104,"2,00",5201,"74,19",5723,10044,68713,3538501
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),19,São Luís Do Paraitinga,102,"1,38",7405,"100,00",8061,10204,71013,3550001
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),20,Cunha,95,"0,77",12274,"96,49",13624,18135,63738,3513603
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),21,Pindamonhangaba,95,"0,11",84539,"100,00",94478,119093,68616,3538006
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),22,Paraibuna,87,"1,04",8327,"82,98",9051,13836,68136,3535606
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),23,Lavrinhas,83,"1,87",4440,"95,45",4842,6102,66338,3526605
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),24,Arapeí,78,"4,18",1687,"100,00",1989,2505,61646,3503158
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),25,Natividade Da Serra,77,"1,84",4147,"100,00",4410,5669,67474,3532306
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),26,Monteiro Lobato,68,"2,35",2895,"100,00",3083,3833,67350,3531704
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),27,Tremembé,59,"0,27",21657,"100,00",23668,29627,71978,3554805
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),28,Redenção Da Serra,53,"1,76",3007,"100,00",3269,4304,69477,3542305
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),29,Bananal,39,"0,66",5611,"100,00",6567,8231,61972,3504909
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),30,Areias,33,"1,30",2521,"100,00",2748,3463,61697,3503505
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),31,Queluz,31,"0,62",4981,"100,00",5474,7112,69396,3541901
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),32,Silveiras,28,"0,70",3975,"100,00",4324,5404,71412,3552007
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),33,Lagoinha,27,"0,67",4010,"100,00",4282,5475,66273,3526308
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),34,Roseira,27,"0,43",6241,"100,00",6837,8328,69876,3544301
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),35,Caçapava,23,"0,04",52147,"100,00",58090,72593,62715,3508504
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),36,São José Do Barreiro,10,"0,37",2673,"100,00",2821,3578,70939,3549607
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),37,Jambeiro,3,"0,08",3639,"100,00",3951,4996,65994,3524907
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),38,Santa Branca,1,"0,01",8520,"100,00",9146,11889,70211,3546009
+Região Metropolitana do Vale do Paraíba e Litoral Norte (São José dos Campos),39,Igaratá,0,"0,00",6875,"100,00",7353,9443,65056,3520202
+Região Metropolitana de Campinas,1,Americana,712,"0,55",129833,"100,00",142957,181010,61310,3501608
+Região Metropolitana de Campinas,2,Paulínia,275,"0,41",66901,"100,00",72666,89901,68314,3536505
+Região Metropolitana de Campinas,3,Campinas,268,"0,04",600106,"100,00",665379,871091,62910,3509502
+Região Metropolitana de Campinas,4,Nova Odessa,159,"0,46",34505,"97,90",38119,47408,67695,3533403
+Região Metropolitana de Campinas,5,Holambra,145,"1,55",9367,"100,00",10185,12570,61743,3519055
+Região Metropolitana de Campinas,6,Santa Bárbara D'Oeste,136,"0,13",102088,"100,00",112962,138410,70173,3545803
+Região Metropolitana de Campinas,7,Santo Antônio De Posse,82,"0,70",11735,"100,00",13173,16288,70610,3548005
+Região Metropolitana de Campinas,8,Valinhos,68,"0,10",69860,"100,00",76781,94674,72257,3556206
+Região Metropolitana de Campinas,9,Sumaré,55,"0,04",138522,"100,00",154530,199799,71498,3552403
+Região Metropolitana de Campinas,10,Hortolândia,33,"0,03",104107,"88,55",116891,164275,61727,3519071
+Região Metropolitana de Campinas,11,Jaguariúna,28,"0,09",32451,"100,00",35856,45186,65951,3524709
+Região Metropolitana de Campinas,12,Indaiatuba,22,"0,02",122149,"85,99",135021,192077,65110,3520509
+Região Metropolitana de Campinas,13,Morungaba,16,"0,30",5261,"67,74",5931,10613,67415,3532009
+Região Metropolitana de Campinas,14,Artur Nogueira,15,"0,05",27950,"100,00",31478,38528,61751,3503802
+Região Metropolitana de Campinas,15,Cosmópolis,11,"0,04",30067,"100,00",34896,44572,63576,3512803
+Região Metropolitana de Campinas,16,Itatiba,11,"0,02",61537,"100,00",68525,85162,65692,3523404
+Região Metropolitana de Campinas,17,Engenheiro Coelho,7,"0,07",10748,"100,00",11751,14967,61689,3515152
+Região Metropolitana de Campinas,18,Vinhedo,6,"0,01",47133,"100,00",51564,65669,72370,3556701
+Região Metropolitana de Campinas,19,Pedreira,2,"0,01",23521,"100,00",26784,33383,68438,3537107
+Região Metropolitana de Campinas,20,Monte Mor,1,"0,01",32192,"100,00",36862,47316,67377,3531803
