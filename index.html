@@ -389,7 +389,194 @@
             font-size: 0.82rem;
             border-top: 1px solid var(--border-subtle);
         }
+    
+        /* ==================== RESPONSIVIDADE ULTRA-REFINADA (MOBILE & DESKTOP) ==================== */
+        
+        .mobile-scroll-hint {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            font-size: 0.76rem;
+            color: var(--accent-cyan);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        /* Telas Médias e Tablets (<= 1024px) */
+        @media (max-width: 1024px) {
+            body {
+                padding: 24px 16px 50px;
+            }
+            .charts-row {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+            .kpi-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 14px;
+            }
+            .chart-card {
+                padding: 18px;
+            }
+            .chart-container {
+                height: 300px;
+            }
+        }
+
+        /* Telas Menores e Celulares (<= 768px) */
+        @media (max-width: 768px) {
+            body {
+                padding: 16px 12px 40px;
+            }
+
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+                margin-bottom: 24px;
+                padding-bottom: 18px;
+            }
+
+            .header-left {
+                width: 100%;
+            }
+
+            .header-left h1 {
+                font-size: 1.5rem;
+                line-height: 1.25;
+            }
+
+            .badge-cand {
+                font-size: 0.75rem;
+                padding: 4px 10px;
+                flex-wrap: wrap;
+            }
+
+            .header-actions {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .btn {
+                padding: 10px 8px;
+                font-size: 0.78rem;
+                justify-content: center;
+                text-align: center;
+                min-height: 42px;
+            }
+
+            .kpi-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin-bottom: 24px;
+            }
+
+            .kpi-card {
+                padding: 16px;
+            }
+
+            .kpi-value {
+                font-size: 1.8rem;
+            }
+
+            .chart-card {
+                padding: 14px 12px;
+                border-radius: 12px;
+            }
+
+            .chart-title {
+                font-size: 1rem;
+            }
+
+            .chart-subtitle {
+                font-size: 0.78rem;
+            }
+
+            .chart-container {
+                height: 270px;
+            }
+
+            .section-title {
+                font-size: 1.15rem;
+                margin-bottom: 12px;
+            }
+
+            .table-controls {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+                margin-bottom: 14px;
+            }
+
+            .filters {
+                display: flex;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                padding-bottom: 6px;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: thin;
+                gap: 6px;
+            }
+
+            .filters::-webkit-scrollbar {
+                height: 4px;
+            }
+
+            .filters::-webkit-scrollbar-thumb {
+                background: rgba(255, 255, 255, 0.2);
+                border-radius: 4px;
+            }
+
+            .tab-btn {
+                flex-shrink: 0;
+                padding: 8px 12px;
+                font-size: 0.78rem;
+                white-space: nowrap;
+            }
+
+            .search-box {
+                width: 100%;
+                padding: 10px 14px;
+                font-size: 0.88rem;
+            }
+
+            .mobile-scroll-hint {
+                display: flex;
+            }
+
+            .table-card {
+                border-radius: 12px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
+            table {
+                min-width: 620px;
+                font-size: 0.82rem;
+            }
+
+            th, td {
+                padding: 10px 12px;
+            }
+        }
+
+        /* Celulares Pequenos (<= 480px) */
+        @media (max-width: 480px) {
+            .header-actions {
+                grid-template-columns: 1fr;
+            }
+            .header-left h1 {
+                font-size: 1.35rem;
+            }
+            .kpi-value {
+                font-size: 1.6rem;
+            }
+        }
     </style>
+
 </head>
 <body>
 
@@ -516,6 +703,7 @@
         <input type="text" id="searchInput" class="search-box" placeholder="Buscar município..." onkeyup="searchTable()">
     </div>
 
+    <div class="mobile-scroll-hint"><span>⇄ Deslize horizontalmente para visualizar todas as colunas</span></div>
     <div class="table-card">
         <table id="resultsTable">
             <thead>
